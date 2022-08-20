@@ -1,0 +1,6 @@
+img.loading {
+   background: transparent url("/img/loading.gif") no-repeat scroll center center;
+   width: 500px;
+   height: auto;
+   min-height: 300px;
+}

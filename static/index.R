@@ -73,11 +73,15 @@ shinyDependencies <- function() {
 ui <- fluidPage(
   # We must include the dependencies somewhere
   shinyDependencies(),
+  tags$head(
+    tags$link(rel = "stylesheet", href = "/css/main.css")
+  ),
   title = "Face App",
   fluidRow(
-    textInput("path", label = "Image", placeholder = "andres.jpg"),
-    div(
-      tags$a(tags$b("See the available images"), href = "/img"),
+    selectizeInput(
+      "path",
+      label = "Image",
+      choices = NULL
     ),
     actionButton("run_model", "Run model"),
     uiOutput("result")

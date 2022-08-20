@@ -1572,7 +1572,6 @@ dependencies = [
 [[package]]
 name = "shiny-rs"
 version = "0.1.0"
-source = "git+https://github.com/andyquinterom/shiny-rs?branch=master#8094aa4539444806396ce673a19de75da03d4f75"
 dependencies = [
  "actix",
  "actix-files",
